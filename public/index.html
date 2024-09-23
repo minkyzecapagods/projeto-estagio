@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="icon" href="/home/zecapagods/temp/ws-vscode/agro-form/icon/icon.jpg">
+</head>
+
+<body>
+    <header>
+        <span hidden>A</span>
+    </header>
+    <div class="container">
+        <div class="titulo">REQUERIMENTO PARA SOLICITAÇÃO DO SELO ARTE</div>
+        <form id="form" action="#" method="post">
+            <div class="coluna">
+                <div class="input-box">
+                    <span class="detalhes">Eu</span>
+                    <input id="nome" 
+                            name="nome" 
+                            type="text" 
+                            placeholder="Nome Completo"
+                            maxlength="40" 
+                            required>
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">Natural de</span>
+                    <input id="naturalidade" 
+                            name="naturalidade" 
+                            type="text" 
+                            placeholder="Cidade/UF"
+                            maxlength="20" 
+                            required>
+                </div>
+                <div class="input-box">
+                    <span class="profissao">Profissão</span>
+                    <input id="profissao" 
+                            name="profissao"   
+                            type="text"
+                            placeholder="Profissão"
+                            maxlength="25" 
+                            required>
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">CPF</span>
+                    <input id="cpf" 
+                            name="cpf" 
+                            type="text" 
+                            placeholder="000.000.000-00"
+                            maxlength="14" 
+                            required>
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">Residente e domiciliado (Rua/Av)</span>
+                    <input id="rua"
+                            name="rua" 
+                            type="text" 
+                            placeholder="Rua ou avenida da residência"
+                            maxlength="40" 
+                            required>
+                </div>
+                <div class="side-to-side">
+                    <div class="input-box">
+                        <span class="detalhes">CEP</span>
+                        <input id="cep" 
+                                name="cep" 
+                                type="text" 
+                                maxlength="9" 
+                                placeholder="00000-000"
+                                required>
+                    </div>
+                    <div class="input-box"> 
+                        <span class="detalhes">Bairro</span>
+                        <input id="bairro" 
+                                name="bairro" 
+                                type="text" 
+                                maxlength="25"
+                                placeholder="Bairro da resiência"
+                                required>
+                    </div>
+                    <div class="input-box">
+                        <span class="detalhes">Município</span>
+                        <input id="municipio" 
+                                name="municipio" 
+                                type="text" 
+                                maxlength="25" 
+                                placeholder="Município da residência"
+                                required>
+                    </div>
+                    <div class="input-box">
+                        <span class="detalhes">Estado</span>
+                        <select id="uf" required>
+                            <option value="" disabled selected>UF</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">Proprietário/Representante legal (Razão Social)</span>
+                    <input id="empr" 
+                        name="empr" 
+                        type="text" 
+                        placeholder="Nome da empresa"
+                        maxlength="50" 
+                        required>
+                </div>
+                <div class="input-box">
+                <span class="detalhes">CNPJ/CPF</span>
+                <input id="cnpj" 
+                        name="cnpj" 
+                        type="text" 
+                        placeholder="CNPJ ou CPF"
+                        maxlength="18"
+                        required>
+                </div> 
+                <div class="input-box">
+                    <span class="detalhes">IE (Inscrição Estadual)</span>
+                    <input id="ie" 
+                            name="ie" 
+                            type="text" 
+                            maxlength="12"
+                            placeholder="00.000.000-0"
+                            required>
+                </div>
+                <div class="input-box">
+                    <span class="detalhes-linha">Situado (Rua/Av)</span>
+                    <input id="emprrua" 
+                            name="emprrua" 
+                            type="text" 
+                            maxlength="40" 
+                            placeholder="Rua ou avenida da empresa"
+                            required>
+                </div>
+                <div class="side-to-side">
+                    <div class="input-box">
+                        <span class="detalhes">Bairro</span>
+                        <input id="emprbairro" 
+                                name="emprbairro" 
+                                type="text" 
+                                placeholder="Bairro da empresa"
+                                maxlength="25" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="detalhes">Município</span>
+                        <input id="emprmunicipio" 
+                                name="emprmunicipio" 
+                                type="text" 
+                                maxlength="25" 
+                                placeholder="Município da empresa"
+                                required>
+                    </div>
+                    <div class="input-box">
+                        <span class="detalhes">Estado</span>
+                        <select id="empruf" required>
+                            <option value="" disabled selected>UF</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="detalhes">CEP</span>
+                        <input id="emprcep" 
+                                name="emprcep" 
+                                type="text" 
+                                placeholder="00000-000"
+                                maxlength="9" 
+                                required>
+                    </div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="input-box">
+                    <span class="detalhes">Pontos de referência</span>
+                    <input id="refponto" 
+                            name="refponto" 
+                            type="text"
+                            placeholder="Referência para o local da empresa"
+                            maxlength="40">
+                </div>             
+            </div>
+            <div class="coluna">
+                <div class="input-box">
+                    <span class="detalhes">Telefone</span>
+                    <input id="tel" 
+                            name="tel" 
+                            type="text" 
+                            maxlength="14" 
+                            placeholder="(00) 900000000"
+                            required>
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">E-mail</span>
+                    <input id="email" 
+                            name="email" 
+                            type="email" 
+                            placeholder="xxxxxxxxxx@xxxxx.com"
+                            maxlength="40" 
+                            required>
+                </div>
+            </div>
+            <div class="lista">
+                <span class="detalhes">Classificação como:</span>
+                <select name="classificacao" id="classificacao" required>
+                    <option value="" disabled selected>Selecione sua classificação</option>
+                    <option value="unidade_beneficiamento">Unidade de Beneficiamento</option>
+                    <option value="queijeira_artesanal">Unidade de Beneficiamento de Leite e Derivados – Queijeira Artesanal</option>
+                    <option value="granja_avicola">Granja Avícola (Casa de Ovo)</option>
+                    <option value="usina_beneficiamento">Usina de Beneficiamento de Leite</option>
+                    <option value="unidade_extração">Unidade de Extração e Beneficiamento de Produtos de Abelhas (Casa de Mel)</option>
+                    <option value="outros">Outros</option>
+                </select>
+                <div id="outros-clas" style=" display: none;">
+                    <textarea placeholder="Especifique sua classificação" name="outros-clas" maxlength="50"></textarea>
+                </div>
+                <div id="especificacao" style=" display: none;">
+                    <label for="carnes">
+                        <input type="checkbox" value="carnes" id="ch1"/>
+                        Carnes
+                    </label>
+                    <label for="mel">
+                        <input type="checkbox" value="mel" id="ch2"/>
+                        Mel
+                    </label>
+                    <label for="ovos">
+                        <input type="checkbox" value="ovos" id="ch3"/>
+                        Ovos
+                    </label>
+                    <label for="pescados">
+                        <input type="checkbox" value="pescados" id="ch4"/>
+                        Pescados
+                    </label>
+                    <label for="outros">
+                        <input type="checkbox" value="outros" id="ch5"/>
+                        Outros
+                    </label>
+                </div>
+                <div id="outros-prod" style=" display: none;">
+                    <textarea id="text-outros" placeholder="Especifique os produtos" name="outros-prod"></textarea>
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">Que irá elaborar os produtos (Produto e seu número de registro no IDIARN ou SIM)</span>
+                    <textarea id="text" placeholder="Liste os produtos e seus respectivos números de registro" name="outros-clas" maxlength="50" required></textarea>
+                </div>
+                <div class="side-to-side">
+                    <div class="input-box">
+                        <span class="detalhes">Registrado junto ao</span>
+                        <select name="registro" id="registro" required>
+                            <option value="" disabled selected>Escolha o registro</option>
+                            <option value="seipoa-idiarn">SEIPOA/IDIARN</option>
+                            <option value="sim">SIM</option>
+                        </select>
+                    </div>
+                    <div id="sim-registro" class="input-box" style=" display: none;">
+                        <span class="detalhes">Município</span>
+                        <input id="reg-municipio" 
+                                name="reg-municipio" 
+                                type="text" 
+                                maxlength="25" 
+                                placeholder="Município do registro">
+                    </div>
+                    <div class="input-box">
+                        <span class="detalhes" required>Sob o N°</span>
+                        <input id="reg-num"
+                                name="reg-num"
+                                type="number"
+                                maxlength="25"
+                                placeholder="Número"
+                                min=0 
+                                oninput="validity.valid||(value='');">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">Venho requerer à V.S.* o que se segue</span>
+                    <select name="selo" id="selo" required>
+                        <option value="" disabled selected>Escolha o tipo de selo</option>
+                        <option value="seipoa-idiarn">Inserção no selo arte</option>
+                        <option value="sim">Inserção no selo queijo artesanal</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">Geolocalização da unidade de beneficiamento</span>
+                    <input id="geolocalização"
+                            name="geolocalização"
+                            type="text"
+                            maxlength="50"
+                            placeholder="Local geográfico da unidade"
+                            required>
+                </div>
+                <span id="declaracao" class="detalhes">Declaro que são verdadeiras as informações prestadas nesse requerimento.</span>
+                <div class="side-to-side">
+                    <div class="input-box">
+                        <span class="detalhes">Local</span>
+                        <input id="local" 
+                                name="local"
+                                type="text" 
+                                maxlength="25" 
+                                placeholder="Local de preenchimento"
+                                required>
+                    </div>
+                    <div class="input-box">
+                        <span class="detalhes">Data</span>
+                        <input id="data" 
+                                name="data"
+                                type="date" 
+                                maxlength="25"
+                                required>
+                    </div>
+                </div>
+            </div>   
+            <div class="enviar-form">
+                <button type="submit" value="register">Enviar Formulário</button>
+            </div>
+        </form>
+    </div>
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="caixa-chat">
+        <div class="chatbot">
+            <header>
+                <h2>Chatbot</h2>
+                <span class="material-symbols-outlined close-btn">close</span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Olá! <br> Como posso ajudar?</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Envie uma mensagem..." required></textarea>
+                <span id="send-btn" class="material-symbols-outlined">send</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
